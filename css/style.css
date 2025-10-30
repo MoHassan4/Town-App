@@ -1,0 +1,348 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+:root{
+    --primarycolor: #4169e1;
+    --secondarycolor : #007bff;
+}
+
+body{
+    height : 100vh;
+    width : 100%;
+}
+
+.container{
+    height: 100vh;
+}
+
+/* Hero Section */
+
+.hero-section{
+    height: 100%;
+    background-image: url('../images/background.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    font-family: 'cursive';
+}
+
+header{
+    height : 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-above{
+    display: flex;
+    justify-content: space-between;
+    padding : 22px;
+}
+
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-size : 25px;
+    font-weight: bold;
+}
+
+.logo a:hover{
+    color : blue;
+}
+
+.header-above ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.header-above ul li a{
+    color : white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header-above ul li a:hover{
+    color : var(--primarycolor)
+}
+
+ul li a.active{
+    color : var(--primarycolor);
+}
+
+.header-down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 15px;
+    color : white
+}
+.header-down h2{
+    font-size : 3rem;
+}
+
+.header-down span {
+    color :var(--primarycolor);
+    font-weight: bold;
+}
+
+/* Intro Section */
+
+.intro-section{
+    width : 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap:2rem
+}
+
+.image-section,
+.content-intro-section{
+    width : 50%;
+    font-family:cursive;
+}
+
+.image-section{
+    text-align: center;
+}
+
+.image-section img{ 
+    width : 80%;
+    
+}
+
+.content-intro-section h2{
+    margin-bottom: 1.4rem;
+    color : var(--primarycolor);
+    font-size : 2.5rem;
+    font-weight: 500;
+}
+
+.content-intro-section p{
+    margin-bottom: 1.7rem;
+    width : 70%;
+    line-height: 1.6rem;
+    color : #777;
+}
+
+.sitelink{
+    color : var(--secondarycolor);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sitelink:hover{
+    color : black;
+}
+
+.btn-primary{
+    background-color: var(--secondarycolor);
+    padding : 0.6rem 0.8rem;
+    font-size : 1rem;
+    color : #eee;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: rgba(11, 11, 224, 0.863);
+}
+
+
+/* Works Section */
+
+.work-section{
+    width : 100%;
+    background-image: linear-gradient(180deg,#e3987f,#5c648c);
+    display : flex;
+    justify-content: space-around;
+    padding : 3rem 5rem;
+    text-align: center;
+    gap : 1.6rem;
+    column-gap: 1.8rem;;
+}
+
+.work{
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap : 0.5rem;
+}
+
+.work h2{
+    color : white;
+    font-size : 2rem;
+}
+
+.work a{
+    color : var(--secondarycolor);
+    text-decoration: none;
+    font-size : 1.4rem;
+    display: inline;
+}
+
+.work a:hover{
+    color :#034c9bc2;
+}
+
+.work p{
+    color :#cdc1c1;
+    font-weight: 100;
+}
+
+/* Gallery Seciton */
+
+.gallery-section{
+    width: 100%;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding : 3rem 5rem;
+    gap : 1rem;
+    text-align: center;
+}
+
+.gallery-photos img{
+    width : 210px;
+    height : 230px;
+    transition: all 0.5s;
+    cursor : pointer;
+}
+
+.gallery-section .gallery-photos {
+    display: flex;
+    justify-content: space-around;
+    gap : 1rem;
+    margin-top : 2rem;
+    width : 100%;
+}
+
+.gallery-section h2{
+    color : var(--primarycolor);
+    font-size: 2.2rem;
+}
+
+.gallery-section p{
+    color : #666;
+    font-weight: 50;
+}
+
+.gallery-photos img:hover{
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+
+.contact-section{
+    width : 100%;
+    background-image: url('../images/footer.jpg');
+    background-position: 100% 45%;
+    padding: 2rem 5rem;
+    color : white;
+}
+
+.contact-top{
+    display : flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom :20px;
+    margin-bottom: 30px;
+}
+
+.contact-top h2{
+    margin-bottom: 30px;
+    font-size : 2.6rem;
+}
+
+.contact-top span.line{
+    width:100%;
+    background-color: white;
+    height : 2px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.contact-top span.line::after{
+    content: "";
+    background-color: #eee;
+    position: absolute;
+    top:2px;
+    width : 20%;
+    left : 0;
+    height : 6px;
+}
+
+.contact-top p {
+    line-height: 3rem;
+}
+
+.contact-middle{
+    display : flex;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+    padding : 0 3rem;
+    padding-left : 0rem;
+    font-weight: bold;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    gap : 6rem;
+    align-self: flex-start;
+}
+
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    gap : 5rem;
+}
+
+.contact-right .email-submit{
+    display: flex;
+    justify-content: space-between;
+    gap : 1.2rem;
+}
+
+.email-submit input{
+    background-color: transparent;
+    padding : 0.7rem 2rem;
+    border-radius: 0.5rem;
+    border : 0.15rem solid #eee;
+}
+
+.email-submit input::placeholder{
+    color : white;
+    font-weight: bold;
+}
+
+.btn-submit{
+    color : var(--primarycolor);
+    padding : 0.8rem;
+    border-radius: 0.4rem;
+    text-transform: uppercase;
+    border : none;
+    font-weight : 700;
+    cursor: pointer;
+}
+
+
+.contact-bottom{
+    text-align: center;
+    font-size : 1.1rem;
+}
+
+.contact-bottom span{
+    color : var(--primarycolor)
+}
